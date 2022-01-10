@@ -172,3 +172,15 @@ app.get('/news/:newsId', (req, res) => {
         res.json('No matching news source')
     }
 })
+
+app.get('/news/search/:keyword', (req, res) => {
+    const searchWord = req.params.keyword.toLowerCase()
+    const searchArticles = masterArticles.filter(articles => articles.title.toLowerCase().includes(searchWord))
+    if (searchArticles.length > 0) {
+        res.json(searchArticles)
+    } else {
+        res.json('No matching articles')
+    }
+
+
+})
