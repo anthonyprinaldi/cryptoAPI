@@ -27,11 +27,6 @@ const sources = [
         "base_url": "https://www.coindesk.com/",
         "selector": "a.headline[href]",
     },
-    // {
-    //     "name": "CCN",
-    //     "base_url": "https://www.ccn.com/crypto/",
-    //     "selector": "h2.amp-wp-title > a",
-    // },
     {
         "name": "bitcoinist",
         "base_url": "https://bitcoinist.com/",
